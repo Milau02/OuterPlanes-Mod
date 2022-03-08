@@ -1,0 +1,41 @@
+{
+  "itemGroup.outerplanesModTab": "Outer Planes",
+
+  "item.outerplanes.soulstone": "Soulstone",
+  "tooltip.outerplanes.soulstone": "Hold \u00A7eSHIFT\u00A7r for more Information",
+  "tooltip.outerplanes.soulstone_shift": "Transmute Certain types of blocks, Use on a Soul Gate to become Ethereal",
+
+  "item.outerplanes.garnet": "Garnet",
+  "block.outerplanes.garnet_ore": "Garnet Ore",
+  "block.outerplanes.garnet_cluster": "Garnet Cluster",
+
+  "block.outerplanes.soul_gate": "Soul Gate",
+
+  "block.outerplanes.astral_leaves": "Astral Leaves",
+  "block.outerplanes.astral_sapling": "Astral Sapling",
+  "block.outerplanes.astral_log": "Astral Log",
+  "block.outerplanes.stripped_astral_log": "Stripped Astral Log",
+  "block.outerplanes.astral_wood": "Astral Wood",
+  "block.outerplanes.stripped_astral_wood": "Stripped Astral Wood",
+  "block.outerplanes.astral_planks": "Astral Planks",
+  "block.outerplanes.astral_slab": "Astral Slab",
+  "block.outerplanes.astral_stairs": "Astral Stairs",
+  "block.outerplanes.astral_fence": "Astral Fence",
+  "block.outerplanes.astral_fence_gate": "Astral Fence Gate",
+  "block.outerplanes.astral_root": "Astral Root",
+  "block.outerplanes.astral_door": "Astral Door",
+
+  "block.outerplanes.soultree_leaves": "Soultree Leaves",
+  "block.outerplanes.soultree_sapling": "Soultree Sapling",
+  "block.outerplanes.soultree_log": "Soultree Log",
+  "block.outerplanes.stripped_soultree_log": "Stripped Soultree Log",
+  "block.outerplanes.soultree_wood": "Soultree Wood",
+  "block.outerplanes.stripped_soultree_wood": "Stripped Soultree Wood",
+  "block.outerplanes.soultree_planks": "Soultree Planks",
+  "block.outerplanes.soultree_slab": "Soultree Slab",
+  "block.outerplanes.soultree_stairs": "Soultree Stairs",
+  "block.outerplanes.soultree_fence": "Soultree Fence",
+  "block.outerplanes.soultree_fence_gate": "Soultree Fence Gate",
+  "block.outerplanes.soultree_root": "Soultree Root",
+  "block.outerplanes.soultree_door": "Soultree Door"
+}

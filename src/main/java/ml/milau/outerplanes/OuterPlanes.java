@@ -1,6 +1,8 @@
 package ml.milau.outerplanes;
 
 import com.mojang.logging.LogUtils;
+import ml.milau.outerplanes.block.ModBlocks;
+import ml.milau.outerplanes.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,6 +29,9 @@ public class OuterPlanes {
 
     public OuterPlanes() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         // Register the setup method for modloading
         eventBus.addListener(this::setup);
