@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "outerplanes:garnet"
+    }
+  },
+  "result": {
+    "item": "outerplanes:garnet_cluster"
+  }
+}

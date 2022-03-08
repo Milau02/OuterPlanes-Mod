@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "outerplanes:garnet_cluster"
+    }
+  ],
+  "result": {
+    "item": "outerplanes:garnet",
+    "count": 9
+  }
+}

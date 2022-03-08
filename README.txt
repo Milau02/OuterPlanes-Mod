@@ -1,7 +1,8 @@
 Ported:
+  - Garnet Gem / Garnet Cluster
+  - Garnet Ore
 
 To Port:
-  - Garnet Gem / Garnet Ore
   - Soulstone
   - Soul Gate
 
