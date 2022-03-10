@@ -5,6 +5,7 @@ Ported:
   - Soultree Logs / Wood (With stripped variants)
   - Soultree Planks
   - Soultree Slab
+  - Soultree Fence / Fencegate
   - Soultree Stairs
   - Soultree Door
   - Soultree Trapdoor
