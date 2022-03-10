@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "outerplanes:soultree_log",
+    "outerplanes:soultree_wood",
+    "outerplanes:stripped_soultree_log",
+    "outerplanes:stripped_soultree_wood"
+  ]
+}

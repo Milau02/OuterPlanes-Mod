@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "outerplanes:soultree_log"
+    }
+  },
+  "result": {
+    "item": "outerplanes:soultree_wood",
+    "count": 3
+  }
+}

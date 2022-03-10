@@ -7,6 +7,7 @@
 
   "item.outerplanes.garnet": "Garnet",
   "block.outerplanes.garnet_ore": "Garnet Ore",
+  "block.outerplanes.deepslate_garnet_ore": "Deepslate Garnet Ore",
   "block.outerplanes.garnet_cluster": "Garnet Cluster",
 
   "block.outerplanes.soul_gate": "Soul Gate",
@@ -24,6 +25,7 @@
   "block.outerplanes.astral_fence_gate": "Astral Fence Gate",
   "block.outerplanes.astral_root": "Astral Root",
   "block.outerplanes.astral_door": "Astral Door",
+  "block.outerplanes.astral_trapdoor": "Astral Trapdoor",
 
   "block.outerplanes.soultree_leaves": "Soultree Leaves",
   "block.outerplanes.soultree_sapling": "Soultree Sapling",
@@ -37,5 +39,6 @@
   "block.outerplanes.soultree_fence": "Soultree Fence",
   "block.outerplanes.soultree_fence_gate": "Soultree Fence Gate",
   "block.outerplanes.soultree_root": "Soultree Root",
-  "block.outerplanes.soultree_door": "Soultree Door"
+  "block.outerplanes.soultree_door": "Soultree Door",
+  "block.outerplanes.soultree_trapdoor": "Soultree Trapdoor"
 }

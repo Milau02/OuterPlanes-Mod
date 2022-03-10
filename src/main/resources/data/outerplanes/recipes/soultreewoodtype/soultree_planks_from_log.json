@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "outerplanes:soultree_logs"
+    }
+  ],
+  "result": {
+    "item": "outerplanes:soultree_planks",
+    "count": 4
+  }
+}

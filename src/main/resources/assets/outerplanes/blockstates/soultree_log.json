@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "outerplanes:block/soultree_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "outerplanes:block/soultree_log"
+    },
+    "axis=z": {
+      "model": "outerplanes:block/soultree_log_horizontal",
+      "x": 90
+    }
+  }
+}

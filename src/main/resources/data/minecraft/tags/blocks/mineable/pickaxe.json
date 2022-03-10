@@ -2,6 +2,6 @@
   "replace": false,
   "values": [
     "outerplanes:garnet_cluster",
-    "outerplanes:garnet_ore"
+    "#outerplanes:garnet_ores"
   ]
 }

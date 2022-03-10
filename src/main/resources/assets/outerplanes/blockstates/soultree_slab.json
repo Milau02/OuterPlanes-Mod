@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "outerplanes:block/soultree_slab"
+    },
+    "type=double": {
+      "model": "outerplanes:block/soultree_planks"
+    },
+    "type=top": {
+      "model": "outerplanes:block/soultree_slab_top"
+    }
+  }
+}

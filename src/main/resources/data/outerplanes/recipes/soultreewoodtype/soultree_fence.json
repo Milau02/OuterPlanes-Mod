@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "outerplanes:soultree_planks"
+    }
+  },
+  "result": {
+    "item": "outerplanes:soultree_fence",
+    "count": 3
+  }
+}

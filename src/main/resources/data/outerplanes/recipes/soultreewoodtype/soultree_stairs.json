@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "outerplanes:soultree_planks"
+    }
+  },
+  "result": {
+    "item": "outerplanes:soultree_stairs",
+    "count": 4
+  }
+}

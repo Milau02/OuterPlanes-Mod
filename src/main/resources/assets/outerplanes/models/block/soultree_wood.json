@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "outerplanes:block/soultree_log",
+    "side": "outerplanes:block/soultree_log"
+  }
+}

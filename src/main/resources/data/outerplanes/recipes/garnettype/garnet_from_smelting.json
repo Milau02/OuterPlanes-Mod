@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "outerplanes:garnet_ore"
+    "tag": "outerplanes:garnet_ores"
   },
   "result": "outerplanes:garnet",
   "experience": 1.0,

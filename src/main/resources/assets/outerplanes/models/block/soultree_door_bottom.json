@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "top": "outerplanes:block/soultree_door_top",
+    "bottom": "outerplanes:block/soultree_door_bottom"
+  }
+}

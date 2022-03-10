@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "outerplanes:block/soultree_planks",
+    "top": "outerplanes:block/soultree_planks",
+    "side": "outerplanes:block/soultree_planks"
+  }
+}
