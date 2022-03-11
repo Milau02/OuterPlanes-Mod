@@ -9,6 +9,7 @@ Ported:
   - Soultree Stairs
   - Soultree Door
   - Soultree Trapdoor
+  - Soultree Trees / Saplings / Leaves / Roots
 
 To Port:
   - Soulstone
@@ -21,4 +22,3 @@ To Port:
   - Astral Door
   - Astral Trees / Saplings / Leaves / Roots
 
-  - Soultree Trees / Saplings / Leaves / Roots
