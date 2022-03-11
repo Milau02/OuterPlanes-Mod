@@ -4,6 +4,7 @@ import ml.milau.outerplanes.OuterPlanes;
 import ml.milau.outerplanes.block.custom.ModRotatedPillarBlock;
 import ml.milau.outerplanes.item.ModItemGroup;
 import ml.milau.outerplanes.item.ModItems;
+import ml.milau.outerplanes.world.feature.tree.SoultreeTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -50,9 +51,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOULTREE_SLAB = registerBlock("soultree_slab",
             ()-> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)),optag);
     public static final RegistryObject<Block> SOULTREE_DOOR = registerBlock("soultree_door",
-            ()-> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()),optag);
+            ()-> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)),optag);
     public static final RegistryObject<Block> SOULTREE_TRAPDOOR = registerBlock("soultree_trapdoor",
-            ()-> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()),optag);
+            ()-> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)),optag);
+    public static final RegistryObject<Block> SOULTREE_LEAVES = registerBlock("soultree_leaves",
+            ()-> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)),optag);
+    public static final RegistryObject<Block> SOULTREE_ROOT = registerBlock("soultree_root",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ROOTED_DIRT)),optag);
+    public static final RegistryObject<Block> SOULTREE_SAPLING = registerBlock("soultree_sapling",
+            ()-> new SaplingBlock(new SoultreeTreeGrower(),BlockBehaviour.Properties.copy(Blocks.DARK_OAK_SAPLING)),optag);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

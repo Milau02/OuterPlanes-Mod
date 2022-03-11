@@ -37,6 +37,9 @@ public class OuterPlanes {
     private void clientSetup(final FMLCommonSetupEvent event){
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SOULTREE_DOOR.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SOULTREE_TRAPDOOR.get(), RenderType.translucent());
+
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SOULTREE_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SOULTREE_SAPLING.get(), RenderType.cutout());
     }
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code

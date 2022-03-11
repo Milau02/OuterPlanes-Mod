@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "outerplanes:block/soultree_sapling"
+  }
+}
