@@ -64,13 +64,12 @@ public class RootedDecorator extends TreeDecorator {
     private void genStrand(LevelSimulatedReader pLevel, BiConsumer<BlockPos, BlockState> pBlockSetter, Random pRandom, BlockPos startPos, Direction dir, Direction left, Direction right){
         for(int i = 0; i < 3; i++){
             placeBlockAt(pLevel,pBlockSetter,pRandom,startPos);
-            int choice = pRandom.nextInt(4);
+            int choice = pRandom.nextInt(3);
             switch (choice){
-                case 0 -> startPos = startPos.offset(dir.getNormal()).offset(left.getNormal());
-                case 1 -> startPos = startPos.offset(dir.getNormal());
-                case 2 -> startPos = startPos.offset(dir.getNormal()).offset(right.getNormal());
-                case 3 -> {
-                    placeBlockAt(pLevel,pBlockSetter,pRandom,startPos.offset(dir.getNormal()));
+                case 0 -> startPos = startPos.offset(dir.getNormal()).offset(left.getNormal()); //go left
+                case 2 -> startPos = startPos.offset(dir.getNormal()).offset(right.getNormal()); //go right
+                case 1 -> {
+                    placeBlockAt(pLevel,pBlockSetter,pRandom,startPos.offset(dir.getNormal())); //straight double place
                     startPos = startPos.offset(dir.getNormal()).offset(dir.getNormal());
                 }
             }

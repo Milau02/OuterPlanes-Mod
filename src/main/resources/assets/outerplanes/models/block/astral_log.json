@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "outerplanes:block/astral_log_top",
+    "side": "outerplanes:block/astral_log"
+  }
+}

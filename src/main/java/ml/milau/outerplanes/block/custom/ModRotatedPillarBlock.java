@@ -26,6 +26,12 @@ public class ModRotatedPillarBlock extends RotatedPillarBlock {
             if(state.is(ModBlocks.SOULTREE_WOOD.get())) {
                 return ModBlocks.STRIPPED_SOULTREE_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
+            if(state.is(ModBlocks.ASTRAL_LOG.get())) {
+                return ModBlocks.STRIPPED_ASTRAL_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            if(state.is(ModBlocks.ASTRAL_WOOD.get())) {
+                return ModBlocks.STRIPPED_ASTRAL_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
         }
 
         return super.getToolModifiedState(state, world, pos, player, stack, toolAction);

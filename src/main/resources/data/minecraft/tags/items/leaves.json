@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "outerplanes:soultree_leaves"
+    "outerplanes:soultree_leaves",
+    "outerplanes:astral_leaves"
   ]
 }

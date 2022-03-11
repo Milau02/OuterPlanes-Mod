@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#outerplanes:soultree_logs"
+    "#outerplanes:soultree_logs",
+    "#outerplanes:astral_logs"
   ]
 }

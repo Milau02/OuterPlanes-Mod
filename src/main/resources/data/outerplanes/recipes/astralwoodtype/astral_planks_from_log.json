@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "outerplanes:astral_logs"
+    }
+  ],
+  "result": {
+    "item": "outerplanes:astral_planks",
+    "count": 4
+  }
+}

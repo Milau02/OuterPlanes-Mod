@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "outerplanes:astral_log",
+    "outerplanes:astral_wood",
+    "outerplanes:stripped_astral_log",
+    "outerplanes:stripped_astral_wood"
+  ]
+}

@@ -40,6 +40,12 @@ public class OuterPlanes {
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SOULTREE_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SOULTREE_SAPLING.get(), RenderType.cutout());
+
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ASTRAL_DOOR.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ASTRAL_TRAPDOOR.get(), RenderType.translucent());
+
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ASTRAL_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ASTRAL_SAPLING.get(), RenderType.cutout());
     }
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code

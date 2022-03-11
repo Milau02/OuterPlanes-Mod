@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "outerplanes:block/astral_slab"
+    },
+    "type=double": {
+      "model": "outerplanes:block/astral_planks"
+    },
+    "type=top": {
+      "model": "outerplanes:block/astral_slab_top"
+    }
+  }
+}

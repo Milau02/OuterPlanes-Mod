@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "outerplanes:soultree_fence_gate"
+    "outerplanes:soultree_fence_gate",
+    "outerplanes:astral_fence_gate"
   ]
 }

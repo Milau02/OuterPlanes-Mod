@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "outerplanes:block/astral_sapling"
+  }
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "outerplanes:soultree_stairs"
+    "outerplanes:soultree_stairs",
+    "outerplanes:astral_stairs"
   ]
 }
