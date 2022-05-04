@@ -1,12 +1,10 @@
-package ml.milau.outerplanes;
+package ml.milau.outerplanes.core;
 
 import com.mojang.logging.LogUtils;
-import ml.milau.outerplanes.block.ModBlocks;
-import ml.milau.outerplanes.item.ModItems;
+import ml.milau.outerplanes.core.block.ModBlocks;
+import ml.milau.outerplanes.core.item.ModItems;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;

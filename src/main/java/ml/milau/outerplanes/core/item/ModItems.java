@@ -1,6 +1,6 @@
-package ml.milau.outerplanes.item;
+package ml.milau.outerplanes.core.item;
 
-import ml.milau.outerplanes.OuterPlanes;
+import ml.milau.outerplanes.core.OuterPlanes;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

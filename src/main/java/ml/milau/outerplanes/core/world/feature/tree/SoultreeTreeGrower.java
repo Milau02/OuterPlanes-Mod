@@ -1,6 +1,6 @@
-package ml.milau.outerplanes.world.feature.tree;
+package ml.milau.outerplanes.core.world.feature.tree;
 
-import ml.milau.outerplanes.world.feature.ModConfiguredFeatures;
+import ml.milau.outerplanes.core.world.feature.ModConfiguredFeatures;
 import net.minecraft.core.Holder;
 import net.minecraft.world.level.block.grower.AbstractMegaTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -8,12 +8,12 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Random;
 
-public class AstralTreeGrower extends AbstractMegaTreeGrower {
+public class SoultreeTreeGrower extends AbstractMegaTreeGrower {
 
     @Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredMegaFeature(Random p_204306_) {
-        return ModConfiguredFeatures.ASTRAL_TREE;
+        return ModConfiguredFeatures.SOULTREE_TREE;
     }
 
     @Nullable

@@ -1,11 +1,11 @@
-package ml.milau.outerplanes.block;
+package ml.milau.outerplanes.core.block;
 
-import ml.milau.outerplanes.OuterPlanes;
-import ml.milau.outerplanes.block.custom.ModRotatedPillarBlock;
-import ml.milau.outerplanes.item.ModItemGroup;
-import ml.milau.outerplanes.item.ModItems;
-import ml.milau.outerplanes.world.feature.tree.AstralTreeGrower;
-import ml.milau.outerplanes.world.feature.tree.SoultreeTreeGrower;
+import ml.milau.outerplanes.core.OuterPlanes;
+import ml.milau.outerplanes.core.block.custom.ModRotatedPillarBlock;
+import ml.milau.outerplanes.core.item.ModItemGroup;
+import ml.milau.outerplanes.core.item.ModItems;
+import ml.milau.outerplanes.core.world.feature.tree.AstralTreeGrower;
+import ml.milau.outerplanes.core.world.feature.tree.SoultreeTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -60,6 +60,10 @@ public class ModBlocks {
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ROOTED_DIRT)),optag);
     public static final RegistryObject<Block> SOULTREE_SAPLING = registerBlock("soultree_sapling",
             ()-> new SaplingBlock(new SoultreeTreeGrower(),BlockBehaviour.Properties.copy(Blocks.DARK_OAK_SAPLING)),optag);
+    public static final RegistryObject<Block> SOUL_DIRT = registerBlock("soul_dirt",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)),optag);
+    public static final RegistryObject<Block> SOUL_GRASS_BLOCK = registerBlock("soul_grass_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)),optag);
 
     public static final RegistryObject<Block> ASTRAL_LOG = registerBlock("astral_log",
             ()-> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),optag);

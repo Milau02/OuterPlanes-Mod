@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "outerplanes:block/soul_dirt",
+    "top": "outerplanes:block/soul_grass_block_top",
+    "side": "outerplanes:block/soul_grass_block_side"
+  }
+}

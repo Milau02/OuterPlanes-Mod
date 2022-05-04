@@ -1,12 +1,14 @@
-package ml.milau.outerplanes.world.feature.tree.decorators;
+package ml.milau.outerplanes.core.world.feature.tree.decorators;
 
 import com.mojang.serialization.Codec;
+import ml.milau.outerplanes.core.util.OuterPlanesTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Vec3i;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.LevelSimulatedReader;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
@@ -27,18 +29,39 @@ public class RootedDecorator extends TreeDecorator {
     public void place(LevelSimulatedReader pLevel, BiConsumer<BlockPos, BlockState> pBlockSetter, Random pRandom, List<BlockPos> pLogPositions, List<BlockPos> pLeafPositions) {
 
         if (!pLogPositions.isEmpty()) {
-            int i = pLogPositions.get(0).getY();
-            Stream<BlockPos> lowestTrunks = pLogPositions.stream().filter((p_69310_) -> {return p_69310_.getY() == i;});
+            int yLevel = getLowestLog(pLevel,pLogPositions);
+            pLogPositions.forEach(System.out::println);
+            Stream<BlockPos> lowestTrunks = pLogPositions.stream().filter((p_69310_) -> {return p_69310_.getY() == yLevel;});
             BlockPos centerLog = new BlockPos(getCornerLog(lowestTrunks,pLevel,pBlockSetter,pRandom));
+            System.out.println(centerLog);
             genStrand(pLevel,pBlockSetter,pRandom,centerLog.north(),Direction.NORTH,Direction.WEST,Direction.EAST);
             genStrand(pLevel,pBlockSetter,pRandom,centerLog.east().east(),Direction.EAST,Direction.NORTH,Direction.SOUTH);
             genStrand(pLevel,pBlockSetter,pRandom,centerLog.east().south().south(),Direction.SOUTH,Direction.EAST,Direction.WEST);
             genStrand(pLevel,pBlockSetter,pRandom,centerLog.south().west(),Direction.WEST,Direction.SOUTH,Direction.NORTH);
         }
     }
-
+    public static int getLowestLog(LevelSimulatedReader pLevel, List<BlockPos> pLogPositions){
+        int i = 0;
+        BlockPos tempLog = pLogPositions.get(i);
+        if(pLevel.isStateAtPosition(tempLog,RootedDecorator::isLog)){
+            return tempLog.getY();
+        }
+        else{
+            while(!pLevel.isStateAtPosition(tempLog,RootedDecorator::isLog)){
+                i++;
+                tempLog = pLogPositions.get(i);
+            }
+            return tempLog.getY();
+        }
+    }
+    public static boolean isLog(BlockState pBlockState){
+        return pBlockState.is(BlockTags.LOGS);
+    }
+    public static boolean isAppropriate(BlockState pBlockState) {
+        return pBlockState.is(BlockTags.DIRT);// || pBlockState.is(OuterPlanesTags.Blocks.ASTRAL_TURF) || pBlockState.is(OuterPlanesTags.Blocks.SOULTREE_TURF)
+    }
     private void placeBlockAt(LevelSimulatedReader pLevel, BiConsumer<BlockPos, BlockState> pBlockSetter, Random pRandom, BlockPos pPos) {
-        if (Feature.isGrassOrDirt(pLevel, pPos)) {
+        if (pLevel.isStateAtPosition(pPos,RootedDecorator::isAppropriate)) {
             pBlockSetter.accept(pPos, this.provider.getState(pRandom, pPos));
         }
     }
@@ -49,7 +72,8 @@ public class RootedDecorator extends TreeDecorator {
         double z = 0.0;
         int counting = 0;
         for(BlockPos log : lowestTrunks.toList()){
-            placeBlockAt(pLevel,pBlockSetter,pRandom,log);
+            BlockPos ground = new BlockPos(log.getX(),log.getY()-1,log.getZ());
+            placeBlockAt(pLevel,pBlockSetter,pRandom,ground);
             x = x + log.getX();
             y = y + log.getY();
             z = z + log.getZ();
@@ -58,7 +82,7 @@ public class RootedDecorator extends TreeDecorator {
         x = x / counting;
         y = y / counting;
         z = z / counting;
-        return new Vec3i(x,y,z);
+        return new Vec3i(x,y-1,z);
     }
 
     private void genStrand(LevelSimulatedReader pLevel, BiConsumer<BlockPos, BlockState> pBlockSetter, Random pRandom, BlockPos startPos, Direction dir, Direction left, Direction right){
@@ -69,8 +93,9 @@ public class RootedDecorator extends TreeDecorator {
                 case 0 -> startPos = startPos.offset(dir.getNormal()).offset(left.getNormal()); //go left
                 case 2 -> startPos = startPos.offset(dir.getNormal()).offset(right.getNormal()); //go right
                 case 1 -> {
-                    placeBlockAt(pLevel,pBlockSetter,pRandom,startPos.offset(dir.getNormal())); //straight double place
-                    startPos = startPos.offset(dir.getNormal()).offset(dir.getNormal());
+                    //placeBlockAt(pLevel,pBlockSetter,pRandom,startPos.offset(dir.getNormal())); //straight double place
+                    startPos = startPos.offset(dir.getNormal());
+                    //.offset(dir.getNormal());
                 }
             }
         }

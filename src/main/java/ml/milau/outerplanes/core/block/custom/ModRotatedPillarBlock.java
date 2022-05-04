@@ -1,6 +1,6 @@
-package ml.milau.outerplanes.block.custom;
+package ml.milau.outerplanes.core.block.custom;
 
-import ml.milau.outerplanes.block.ModBlocks;
+import ml.milau.outerplanes.core.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.AxeItem;

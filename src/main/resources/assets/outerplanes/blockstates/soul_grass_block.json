@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "outerplanes:block/soul_grass_block"
+      },
+      {
+        "model": "outerplanes:block/soul_grass_block",
+        "y": 90
+      },
+      {
+        "model": "outerplanes:block/soul_grass_block",
+        "y": 180
+      },
+      {
+        "model": "outerplanes:block/soul_grass_block",
+        "y": 270
+      }
+    ]
+  }
+}

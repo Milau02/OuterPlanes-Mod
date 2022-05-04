@@ -1,8 +1,8 @@
-package ml.milau.outerplanes.world.feature;
+package ml.milau.outerplanes.core.world.feature;
 
 import com.google.common.collect.ImmutableList;
-import ml.milau.outerplanes.block.ModBlocks;
-import ml.milau.outerplanes.world.feature.tree.decorators.RootedDecorator;
+import ml.milau.outerplanes.core.block.ModBlocks;
+import ml.milau.outerplanes.core.world.feature.tree.decorators.RootedDecorator;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.util.valueproviders.ConstantInt;
