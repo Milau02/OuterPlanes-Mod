@@ -44,6 +44,8 @@ public class OuterPlanes {
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ASTRAL_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ASTRAL_SAPLING.get(), RenderType.cutout());
+
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.IMBUEMENT_ALTAR.get(), RenderType.translucent());
     }
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code

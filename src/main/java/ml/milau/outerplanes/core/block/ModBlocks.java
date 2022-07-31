@@ -1,6 +1,7 @@
 package ml.milau.outerplanes.core.block;
 
 import ml.milau.outerplanes.core.OuterPlanes;
+import ml.milau.outerplanes.core.block.custom.ImbuementAltarBlock;
 import ml.milau.outerplanes.core.block.custom.ModRotatedPillarBlock;
 import ml.milau.outerplanes.core.item.ModItemGroup;
 import ml.milau.outerplanes.core.item.ModItems;
@@ -95,6 +96,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ASTRAL_SAPLING = registerBlock("astral_sapling",
             ()-> new SaplingBlock(new AstralTreeGrower(),BlockBehaviour.Properties.copy(Blocks.DARK_OAK_SAPLING)),optag);
 
+
+    public static final RegistryObject<Block> IMBUEMENT_ALTAR = registerBlock("imbuement_altar",
+            ()-> new ImbuementAltarBlock(BlockBehaviour.Properties.copy(Blocks.BASALT).noOcclusion()),optag);
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
