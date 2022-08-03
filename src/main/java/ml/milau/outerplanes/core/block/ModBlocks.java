@@ -99,6 +99,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> IMBUEMENT_ALTAR = registerBlock("imbuement_altar",
             ()-> new ImbuementAltarBlock(BlockBehaviour.Properties.copy(Blocks.BASALT).noOcclusion()),optag);
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

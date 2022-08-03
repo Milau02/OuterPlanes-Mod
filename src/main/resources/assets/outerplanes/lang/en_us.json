@@ -44,5 +44,10 @@
   "block.outerplanes.soul_grass_block": "Soul Grass Block",
   "block.outerplanes.soul_dirt": "Soul Dirt",
 
-  "block.outerplanes.imbuement_altar": "Imbuement Altar"
+  "block.outerplanes.imbuement_altar": "Imbuement Altar",
+  "item.outerplanes.garnet_amulet": "Garnet Amulet",
+  "item.outerplanes.garnet_ring": "Garnet Ring",
+  "item.outerplanes.hespar": "Hespar",
+  "item.outerplanes.soul_jar": "Soul Jar",
+  "item.outerplanes.unholy_book": "Unholy Book"
 }

@@ -2,7 +2,10 @@ package ml.milau.outerplanes.core;
 
 import com.mojang.logging.LogUtils;
 import ml.milau.outerplanes.core.block.ModBlocks;
+import ml.milau.outerplanes.core.block.entity.ModBlockEntities;
+import ml.milau.outerplanes.core.effect.ModEffects;
 import ml.milau.outerplanes.core.item.ModItems;
+import ml.milau.outerplanes.core.item.custom.GarnetAmulet;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -25,7 +28,8 @@ public class OuterPlanes {
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-
+        ModBlockEntities.register(eventBus);
+        ModEffects.register(eventBus);
         // Register the setup method for modloading
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);

@@ -8,7 +8,7 @@ public class ModItemGroup {
     public static final CreativeModeTab OUTERPLANES_GROUP = new CreativeModeTab("outerplanesModTab"){
         @Override
         public @NotNull ItemStack makeIcon() {
-            return new ItemStack(ModItems.GARNET.get());
+            return new ItemStack(ModItems.UNHOLY_BOOK.get());
         }
     };
 }
