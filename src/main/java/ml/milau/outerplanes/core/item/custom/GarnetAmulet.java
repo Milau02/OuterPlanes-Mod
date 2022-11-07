@@ -57,20 +57,8 @@ public class GarnetAmulet extends ArmorItem {
                         }
                     }
                     if(neutralizer){
-                        event.modifyVisibility(0.0D);
+                        event.modifyVisibility(0.0);
                     }
-                }
-            }
-        }
-    }
-
-    @SubscribeEvent
-    public static void onMonsterHit(LivingAttackEvent event){
-        if (event.getEntity() instanceof ServerPlayer) {
-            if (!(event.getEntity() instanceof FakePlayer)) {
-                Entity dSource = event.getSource().getEntity();
-                if(dSource instanceof Mob monster){
-                    monster.setTarget(null);
                 }
             }
         }

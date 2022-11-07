@@ -49,5 +49,7 @@
   "item.outerplanes.garnet_ring": "Garnet Ring",
   "item.outerplanes.hespar": "Hespar",
   "item.outerplanes.soul_jar": "Soul Jar",
-  "item.outerplanes.unholy_book": "Unholy Book"
+  "item.outerplanes.unholy_book": "Unholy Book",
+
+  "entity.outerplanes.shell": "Shell"
 }
