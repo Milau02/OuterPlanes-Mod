@@ -50,6 +50,9 @@
   "item.outerplanes.hespar": "Hespar",
   "item.outerplanes.soul_jar": "Soul Jar",
   "item.outerplanes.unholy_book": "Unholy Book",
+  "block.outerplanes.wall_of_flesh": "Wall of Flesh",
 
-  "entity.outerplanes.shell": "Shell"
+  "entity.outerplanes.shell": "Shell",
+  "entity.outerplanes.splitter": "Splitter",
+  "item.outerplanes.splitter_spawn_egg": "Splitter Spawn Egg"
 }

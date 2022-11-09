@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "outerplanes:block/wall_of_flesh"
+  }
+}

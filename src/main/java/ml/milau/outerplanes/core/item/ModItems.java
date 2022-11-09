@@ -1,12 +1,14 @@
 package ml.milau.outerplanes.core.item;
 
 import ml.milau.outerplanes.core.OuterPlanes;
+import ml.milau.outerplanes.core.entity.ModEntities;
 import ml.milau.outerplanes.core.item.custom.*;
 import ml.milau.outerplanes.core.util.ModArmorMaterials;
 import ml.milau.outerplanes.core.util.OuterPlanesTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -30,6 +32,9 @@ public class ModItems {
     public static final RegistryObject<Item> SOUL_JAR = ITEMS.register("soul_jar",
             () -> new SoulJar(new Item.Properties().stacksTo(1).tab(optag)));
 
+    public static final RegistryObject<Item> SPLITTER_SPAWN_EGG = ITEMS.register("splitter_spawn_egg",
+            ()->new ForgeSpawnEggItem(ModEntities.SPLITTER,0x524d51,0xe5b573,
+                    new Item.Properties().tab(optag)));
 
     public static final RegistryObject<SwordItem> HESPAR = ITEMS.register("hespar",
             ()-> new HesparScythe(Tiers.NETHERITE,5,-2.4F,new Item.Properties().tab(optag).fireResistant()));

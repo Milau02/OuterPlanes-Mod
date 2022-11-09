@@ -1,6 +1,7 @@
 package ml.milau.outerplanes.core;
 
 import com.mojang.logging.LogUtils;
+import ml.milau.outerplanes.client.event.renderer.SplitterRenderer;
 import ml.milau.outerplanes.core.block.ModBlocks;
 import ml.milau.outerplanes.core.block.entity.ModBlockEntities;
 import ml.milau.outerplanes.core.effect.ModEffects;
@@ -9,6 +10,7 @@ import ml.milau.outerplanes.core.item.ModItems;
 import ml.milau.outerplanes.core.item.custom.GarnetAmulet;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -52,6 +54,8 @@ public class OuterPlanes {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ASTRAL_SAPLING.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.IMBUEMENT_ALTAR.get(), RenderType.translucent());
+
+        EntityRenderers.register(ModEntities.SPLITTER.get(), SplitterRenderer::new);
     }
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code

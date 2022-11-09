@@ -96,6 +96,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> ASTRAL_SAPLING = registerBlock("astral_sapling",
             ()-> new SaplingBlock(new AstralTreeGrower(),BlockBehaviour.Properties.copy(Blocks.DARK_OAK_SAPLING)),optag);
 
+    public static final RegistryObject<Block> WALL_OF_FLESH = registerBlock("wall_of_flesh",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)),optag);
 
     public static final RegistryObject<Block> IMBUEMENT_ALTAR = registerBlock("imbuement_altar",
             ()-> new ImbuementAltarBlock(BlockBehaviour.Properties.copy(Blocks.BASALT).noOcclusion()),optag);
